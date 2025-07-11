@@ -13,7 +13,7 @@ const projects = [
     },
     year: "2025",
     image: "/projects/portfolio.png",
-    link: "https://github.com/rick2303/RegistroUNAH",
+    link: "https://github.com/rick2303/Portfolio",
   },
   {
     title: {
