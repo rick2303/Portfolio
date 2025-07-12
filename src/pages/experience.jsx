@@ -39,16 +39,16 @@ const experiences = [
   {
     company: "PIXDEA",
     role: {
-      en: "Intern fullstack developer",
-      es: "Practicante Desarrollador fullstack",
+      en: "Junior developer",
+      es: "Desarrollador Junior",
     },
     period: {
       en: "November 2023 - March 2024",
       es: "Noviembre 2023 - Marzo 2024",
     },
     details: {
-      en: "During my intership at PIXDEA, I worked on the frontend and backend development for a web and mobile platform that aims to reduce bullying. I developer serverless APIs using AWS services like Lambda (Node.js), RDS (MySQL), Cognito (authentication), and API Gateway. To help schools monitor the mental health of their kids, I made data visualizations. This program gave me hands-on experience creating cloud-native applications.",
-      es: "Durante mis prácticas en PIXDEA, trabajé en el desarrollo frontend y backend de una plataforma web y móvil que busca reducir el acoso escolar. Desarrollo API sin servidor utilizando servicios de AWS como Lambda (Node.js), RDS (MySQL), Cognito (autenticación) y API Gateway. Para ayudar a las escuelas a monitorear la salud mental de sus alumnos, creé visualizaciones de datos. Este programa me proporcionó experiencia práctica en la creación de aplicaciones nativas de la nube.",
+      en: "As a junior developer at PIXDEA, I worked on the frontend and backend development for a web and mobile platform that aims to reduce bullying. I developer serverless APIs using AWS services like Lambda (Node.js), RDS (MySQL), Cognito (authentication), and API Gateway. To help schools monitor the mental health of their kids, I made data visualizations. This program gave me hands-on experience creating cloud-native applications.",
+      es: "En mi rol de desarrollador junior en PIXDEA, trabajé en el desarrollo frontend y backend de una plataforma web y móvil que busca reducir el acoso escolar. Desarrollo API sin servidor utilizando servicios de AWS como Lambda (Node.js), RDS (MySQL), Cognito (autenticación) y API Gateway. Para ayudar a las escuelas a monitorear la salud mental de sus alumnos, creé visualizaciones de datos. Este programa me proporcionó experiencia práctica en la creación de aplicaciones nativas de la nube.",
     },
     socials: "https://pixdea.com",
     photo: "/company/logo_white.png",
