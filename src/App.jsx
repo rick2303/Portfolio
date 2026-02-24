@@ -10,15 +10,16 @@ import Languages from "./pages/languages";
 
 function App() {
   return (
-    <div className="bg-light-secondary text-black dark:bg-dark-primary dark:text-white min-h-screen transition-colors duration-300">
-      <header className="fixed top-0 w-full z-50 bg-black">
+    <div className="bg-light-background text-slate-900 dark:bg-dark-primary dark:text-white min-h-screen transition-colors duration-500">
+      <header className="fixed top-0 w-full z-50">
         <Navbar />
       </header>
+
       <main id="home">
         <Home />
         <Experience />
         <Skill />
-        <Languages/>
+        <Languages />
         <ProjectsSection />
         <References />
         <Contact />

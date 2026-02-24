@@ -42,6 +42,19 @@ const projects = [
   },
   {
     title: {
+      en: "Browser Automation & DOM Analysis Tool",
+      es: "Herramienta de Automatización y Análisis DOM",
+    },
+    description: {
+      en: "A technical project focused on web automation and reverse engineering. Developed scripts to analyze complex DOM structures, extract large datasets into JSON format, and execute asynchronous tasks in the browser environment—demonstrating advanced JavaScript skills for process optimization.",
+      es: "Proyecto técnico enfocado en automatización web e ingeniería inversa. Desarrollé scripts para analizar estructuras DOM complejas, extraer conjuntos de datos a formato JSON y ejecutar tareas asíncronas en el navegador, demostrando habilidades avanzadas en JavaScript para la optimización de procesos.",
+    },
+    year: "2025",
+    image: "/projects/automation.png",
+    link: "https://github.com/rick2303/InstagramUnfollowAutomation",
+  },
+  {
+    title: {
       en: "Data Management Portal",
       es: "Portal de Gestión de Datos y RSVP",
     },
@@ -87,7 +100,7 @@ function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="min-h-screen px-4 md:px-20 py-20 bg-light-secondary dark:bg-dark-primary text-light-primary dark:text-white transition-all duration-300 ease-in-out"
+      className="min-h-screen px-4 md:px-20 py-24 bg-light-background dark:bg-dark-primary transition-all duration-500 ease-in-out"
     >
       <div className="mb-16 flex flex-col items-center text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-dark-tertiary dark:text-dark-font_primary">

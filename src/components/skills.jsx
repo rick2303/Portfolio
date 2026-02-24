@@ -54,23 +54,23 @@ function Skills() {
       className="px-6 md:px-20 py-24 bg-light-background dark:bg-dark-primary transition-colors duration-500"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Encabezado alineado con Experience */}
+        {/* Encabezado: Títulos claros y definidos */}
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-dark-tertiary dark:text-dark-font_primary">
+          <h2 className="text-4xl md:text-5xl font-bold text-light-primary dark:text-dark-font_primary">
             {language === "en" ? "Technical Stack" : "Stack Técnico"}
           </h2>
-          <div className="w-20 h-1.5 bg-light-tertiary dark:bg-dark-secondary mt-4"></div>
+          <div className="w-20 h-1.5 bg-light-secondary dark:bg-dark-secondary mt-4"></div>
         </div>
 
         <div className="space-y-14">
           {categories.map((cat) => (
             <div key={cat.id}>
-              {/* Etiqueta de Categoría - Versión de alta legibilidad */}
-              <h3 className="text-sm font-mono font-bold text-dark-tertiary dark:text-dark-font_primary tracking-[0.2em] uppercase mb-8 flex items-center gap-4 opacity-90">
-                <span className="bg-light-tertiary/10 dark:bg-dark-secondary/10 px-2 py-1 rounded">
+              {/* Etiqueta de Categoría: Usamos Slate-400 en light para un look moderno */}
+              <h3 className="text-sm font-mono font-bold text-slate-500 dark:text-dark-font tracking-[0.2em] uppercase mb-8 flex items-center gap-4">
+                <span className="bg-slate-100 dark:bg-dark-tertiary px-3 py-1 rounded-md">
                   {cat[language]}
                 </span>
-                <div className="flex-grow h-[1px] bg-gray-300 dark:bg-dark-tertiary/50"></div>
+                <div className="flex-grow h-[1px] bg-slate-200 dark:bg-white/10"></div>
               </h3>
 
               {/* Grid de Skills */}
@@ -80,16 +80,15 @@ function Skills() {
                   .map((skill, i) => (
                     <div
                       key={i}
-                      className="group flex flex-col items-center justify-center bg-white dark:bg-dark-tertiary/10 border border-gray-100 dark:border-dark-secondary/20 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:bg-white dark:hover:bg-dark-tertiary/30"
+                      className="group flex flex-col items-center justify-center bg-white dark:bg-dark-tertiary border border-slate-200 dark:border-white/5 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-light-secondary dark:hover:border-dark-secondary"
                     >
-                      <div className="w-12 h-12 mb-4 transition-transform duration-300 group-hover:scale-110">
-                        <img
+<div className="w-16 h-16 mb-4 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">                        <img
                           src={skill.img}
                           alt={skill.name}
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <p className="text-[13px] font-bold text-center text-dark-secondary dark:text-dark-font/80 group-hover:text-light-tertiary dark:group-hover:text-dark-secondary transition-colors leading-tight">
+                      <p className="text-[13px] font-bold text-center text-light-primary dark:text-dark-font_primary group-hover:text-light-secondary dark:group-hover:text-dark-secondary transition-colors leading-tight">
                         {skill.name}
                       </p>
                     </div>

@@ -107,7 +107,7 @@ function References() {
                 <div className="text-light-tertiary dark:text-dark-secondary text-4xl font-serif mb-4">
                   “
                 </div>
-                <blockquote className="text-[15px] leading-relaxed text-dark-secondary/80 dark:text-dark-font/80 italic mb-8">
+                <blockquote className="text-[16px] leading-relaxed text-dark-secondary/80 dark:text-dark-font/80 italic mb-8">
                   {ref.quote[language]}
                 </blockquote>
               </div>
