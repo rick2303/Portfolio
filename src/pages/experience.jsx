@@ -1,37 +1,57 @@
-import { useState } from "react";
 import { useAppContext } from "../context/AppContext";
 
 const experiences = [
   {
-    company: "Bank Ficohsa via OE Internacional",
+    company: "QALI-T",
     role: {
-      en: "Software Developer",
-      es: "Oficial de desarrollo",
+      en: "Application Support Engineer",
+      es: "Ingeniero de Soporte de Aplicaciones",
     },
-    period: {
-      en: "April 2025 - Present",
-      es: "Abril 2025 - Actualidad",
-    },
+    period: { en: "May 2025 - Present", es: "Mayo 2025 - Presente" },
+    skills: [
+      "SQL",
+      "Backend logic",
+      "Third-party Integrations",
+      "Production Support",
+    ],
     details: {
-      en: "In my role as a software developer at Ficohsa, I have developed and optimized backend solutions for global banking operations while working in agile Scrum teams. Using PL/SQL, I have created and managed elaborate database objects, such as stored procedures and packages that communicate with OSB services via UTL libraries. By using UTL_FILE to handle international transfer files, I was able to accelerate up transactions and cut down on wait times. Using Confluence, JIRA, Bitbucket, and MIRO for collaborative development and documentation, I also contributed to developing scalable systems that facilitated the integration of regional banks.",
-      es: "Responsable de desarrollar servicios back-end para operaciones de cobranzas, usando PL/SQL, intermediarios en .NET y asegurando pruebas QA bajo metodología Scrum.",
+      en: [
+        "**System Availability:** Ensure the stability and high availability of production web applications (fynq.site, qali-t.com, olanchito.com, lz-englishacademy.com).",
+        "**Incident Management:** Identify root causes and implement backend fixes to resolve complex system issues.",
+        "**Third-party Integrations:** Manage identity verification workflows (Didit) ensuring secure and reliable data flows.",
+        "**Strategic Collaboration:** Translate production incidents into actionable technical solutions with cross-functional teams.",
+      ],
+      es: [
+        "**Disponibilidad del Sistema:** Garantizo la estabilidad y alta disponibilidad de aplicaciones web (fynq.site, qali-t.com).",
+        "**Gestión de Incidentes:** Identifico causas raíz e implemento correcciones de backend para resolver incidencias complejas.",
+        "**Integraciones Críticas:** Gestiono flujos de verificación de identidad (Didit) asegurando procesos seguros y confiables.",
+        "**Colaboración Estratégica:** Traduzco incidentes de producción en soluciones técnicas accionables junto a equipos técnicos.",
+      ],
     },
-    socials: "https://ficohsa.com",
-    photo: "/company/ficoLogo.png",
+    socials: "https://qali-t.com",
+    photo: "/company/qalit.png",
   },
   {
-    company: "Bank Ficohsa via Grupo Consisa",
+    company: "Bank Ficohsa",
     role: {
-      en: "Junior Software Developer",
-      es: "Desarrollador junior",
+      en: "Production Support Analyst",
+      es: "Analista de Soporte de Producción",
     },
-    period: {
-      en: "July 2024 - March 2025",
-      es: "Julio 2024 - Marzo 2025",
-    },
+    period: { en: "July 2024 - October 2025", es: "Julio 2024 - Octubre 2025" },
+    skills: ["SQL", "PL/SQL", "Java", "SLA Management", "JIRA"],
     details: {
-      en: "In this role, I supported the development and maintenance of modules related to collections and banking infrastructure. I created secure intermediaries in C# with .NET to enable communication between external systems and the bank’s core infrastructure. I was responsible for building and maintaining Oracle database components and participated in projects connected to the core banking system, Abanks. I actively monitored production environments and applied Scrum methodology throughout the development cycle.",
-      es: "Desarrollé interfaces internas con React y Tailwind. Trabajé en la modularización de componentes y diseño responsive.",
+      en: [
+        "**Process Optimization:** Reduced international transfer processing time from 8 days to just 1 day.",
+        "**Core Banking Support:** Ensured 24/7 availability for critical financial systems in production environments.",
+        "**SLA Compliance:** Resolved complex incidents using SQL and PL/SQL while strictly meeting technical requirements.",
+        "**Regional Integration:** Led onboarding flows for partner banks to accelerate regional expansion.",
+      ],
+      es: [
+        "**Optimización de Procesos:** Reduje el tiempo de procesamiento de transferencias internacionales de 8 días a solo 1 día.",
+        "**Soporte Core Bancario:** Garanticé disponibilidad 24/7 para sistemas financieros críticos en entornos de producción.",
+        "**Cumplimiento de SLA:** Resolví incidentes complejos usando SQL y PL/SQL bajo estrictos estándares de calidad.",
+        "**Integración Regional:** Lideré flujos de incorporación para bancos aliados acelerando la expansión regional.",
+      ],
     },
     socials: "https://ficohsa.com",
     photo: "/company/ficoLogo.png",
@@ -39,85 +59,129 @@ const experiences = [
   {
     company: "PIXDEA",
     role: {
-      en: "Junior developer",
-      es: "Desarrollador Junior",
+      en: "Technical Support Engineer",
+      es: "Ingeniero de Soporte Técnico",
     },
-    period: {
-      en: "November 2023 - March 2024",
-      es: "Noviembre 2023 - Marzo 2024",
-    },
+    period: { en: "Nov 2023 - March 2024", es: "Nov 2023 - Marzo 2024" },
+    skills: ["AWS Lambda", "RDS MySQL", "API Gateway", "Cloud Monitoring"],
     details: {
-      en: "As a junior developer at PIXDEA, I worked on the frontend and backend development for a web and mobile platform that aims to reduce bullying. I developer serverless APIs using AWS services like Lambda (Node.js), RDS (MySQL), Cognito (authentication), and API Gateway. To help schools monitor the mental health of their kids, I made data visualizations. This program gave me hands-on experience creating cloud-native applications.",
-      es: "En mi rol de desarrollador junior en PIXDEA, trabajé en el desarrollo frontend y backend de una plataforma web y móvil que busca reducir el acoso escolar. Desarrollo API sin servidor utilizando servicios de AWS como Lambda (Node.js), RDS (MySQL), Cognito (autenticación) y API Gateway. Para ayudar a las escuelas a monitorear la salud mental de sus alumnos, creé visualizaciones de datos. Este programa me proporcionó experiencia práctica en la creación de aplicaciones nativas de la nube.",
+      en: [
+        "**Cloud Operations:** Troubleshot backend inconsistencies in cloud-native applications using AWS services.",
+        "**Serverless Support:** Managed serverless APIs (Lambda, RDS, API Gateway) to ensure reliable data architecture.",
+        "**Data Monitoring:** Specialized in creating monitoring dashboards to track system performance and data accuracy.",
+        "**Agile Resolution:** Solved technical issues efficiently in agile environments for a seamless user experience.",
+      ],
+      es: [
+        "**Operaciones Cloud:** Resolví inconsistencias de backend en aplicaciones nativas de la nube mediante servicios AWS.",
+        "**Soporte Serverless:** Gestioné APIs serverless (Lambda, RDS, API Gateway) asegurando la confiabilidad de los datos.",
+        "**Monitoreo de Datos:** Especializado en la creación de tableros de control para el rendimiento del sistema.",
+        "**Resolución Ágil:** Resolví problemas técnicos eficientemente en entornos ágiles para mejorar la experiencia de usuario.",
+      ],
     },
     socials: "https://pixdea.com",
     photo: "/company/logo_white.png",
   },
 ];
 
+// Función para procesar negritas en los detalles
+const renderDetail = (text) => {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <strong
+        key={i}
+        className="text-dark-tertiary dark:text-dark-font_primary font-bold"
+      >
+        {part.replace(/\*\*/g, "")}
+      </strong>
+    ) : (
+      part
+    ),
+  );
+};
+
 function Experience() {
   const { language } = useAppContext();
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
 
   return (
     <section
       id="experience"
-      className="py-16 px-6 md:px-20 bg-light-secondary dark:bg-dark-primary text-light-primary dark:text-white transition"
+      className="py-24 px-6 md:px-20 bg-light-background dark:bg-dark-primary transition-colors duration-500"
     >
-      <h2 className="text-4xl font-bold text-center mb-10">
-        {language === "en" ? "Experience" : "Experiencia"}
-      </h2>
+      <div className="max-w-4xl mx-auto">
+        <div className="mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-dark-tertiary dark:text-dark-font_primary">
+            {language === "en" ? "Experience" : "Experiencia"}
+          </h2>
+          <div className="w-20 h-1.5 bg-light-tertiary dark:bg-dark-secondary mt-4"></div>
+        </div>
 
-      <div className="relative border-l border-gray-300 dark:border-gray-600 max-w-3xl mx-auto space-y-10">
-        {experiences.map((exp, i) => (
-          <div key={i} className="pl-8 relative">
-            <span className="absolute left-[-24px] top-6 w-12 h-12 bg-dark-D dark:bg-light-primary border-2 border-white dark:border-dark-secondary rounded-full flex items-center justify-center overflow-hidden">
-              {" "}
-              <a href={exp.socials} target="_blank">
-                <img
-                  className="w-10 h-10 object-contain"
-                  src={exp.photo}
-                  alt={exp.company}
-                />
-              </a>
-            </span>
+        <div className="relative">
+          <div className="absolute left-8 md:left-10 top-0 bottom-0 w-[1px] bg-gray-200 dark:bg-dark-tertiary/50"></div>
 
-            <div className="bg-white dark:bg-dark-tertiary p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div className="space-y-20">
+            {experiences.map((exp, i) => (
               <div
-                className="flex justify-between items-start cursor-pointer"
-                onClick={() => toggle(i)}
+                key={i}
+                className="relative flex flex-col md:flex-row gap-8 md:gap-16"
               >
-                <div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    {exp.period[language]}
-                  </p>
-                  <h3 className="text-lg font-semibold dark:text-dark-font">
-                    {exp.role[language]}
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
-                    {exp.company}
-                  </p>
+                <div className="relative z-10 flex-shrink-0">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white dark:bg-dark-tertiary p-3 shadow-xl border border-gray-100 dark:border-dark-secondary/50 flex items-center justify-center overflow-hidden ring-8 ring-light-background dark:ring-dark-primary">
+                    <img
+                      src={exp.photo}
+                      alt={exp.company}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex-grow pt-2">
+                  <div className="flex flex-col gap-1 mb-4">
+                    <span className="text-xs font-mono font-bold text-light-tertiary dark:text-dark-secondary tracking-widest uppercase mb-1">
+                      {exp.period[language]}
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-bold text-dark-tertiary dark:text-dark-font_primary leading-tight">
+                      {exp.role[language]}
+                    </h3>
+                    <a
+                      href={exp.socials}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-medium text-dark-secondary/70 dark:text-dark-font/50 hover:text-light-tertiary transition-colors w-fit italic"
+                    >
+                      {exp.company}
+                    </a>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {exp.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1 text-[10px] font-bold border border-gray-200 dark:border-dark-tertiary dark:text-dark-font text-dark-secondary/80 rounded uppercase tracking-wider bg-white/50 dark:bg-dark-tertiary/30"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+
+                  <ul className="space-y-5">
+                    {exp.details[language].map((item, index) => (
+                      <li
+                        key={index}
+                        className="flex gap-4 text-dark-secondary dark:text-dark-font/70 leading-relaxed text-[15px] md:text-[16px]"
+                      >
+                        <span className="text-light-tertiary dark:text-dark-secondary font-bold text-lg leading-none mt-1">
+                          •
+                        </span>
+                        <p className="flex-grow">{renderDetail(item)}</p>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-
-              {openIndex === i && (
-                <div>
-                  <p className="mt-4 text-gray-700 dark:text-dark-font">
-                    {exp.details[language]} <br></br>
-                    <br></br>
-                    <a href={exp.socials} target="_blank">
-                      <p className="text-blue-600">
-                        Click here to know more about the company
-                      </p>
-                    </a>
-                  </p>
-                </div>
-              )}
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );
