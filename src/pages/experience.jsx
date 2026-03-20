@@ -4,28 +4,30 @@ const experiences = [
   {
     company: "QALI-T",
     role: {
-      en: "Application Support Engineer",
-      es: "Ingeniero de Soporte de Aplicaciones",
+      en: "Software Engineer",
+      es: "Ingeniero de Software",
     },
     period: { en: "May 2025 - Present", es: "Mayo 2025 - Presente" },
     skills: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
       "SQL",
-      "Backend logic",
       "Third-party Integrations",
-      "Production Support",
     ],
     details: {
       en: [
-        "**System Availability:** Ensure the stability and high availability of production web applications (fynq.site, qali-t.com, olanchito.com, lz-englishacademy.com).",
-        "**Incident Management:** Identify root causes and implement backend fixes to resolve complex system issues.",
-        "**Third-party Integrations:** Manage identity verification workflows (Didit) ensuring secure and reliable data flows.",
-        "**Strategic Collaboration:** Translate production incidents into actionable technical solutions with cross-functional teams.",
+        "**Production Apps:** Built production-ready web applications (fynq.site, qali-t.com, olanchito.com, lz-englishacademy.com, vennq.com, pre-register.movelyq.com) using React.js, Next.js, TypeScript, and Tailwind CSS.",
+        "**Front-end Architecture:** Designed scalable front-end structures and implemented backend logic with SQL-based data models.",
+        "**Third-party Integrations:** Integrated identity verification workflows (Didit) ensuring secure and reliable user flows.",
+        "**Cross-functional Collaboration:** Translated business requirements into technical solutions working closely with stakeholders.",
       ],
       es: [
-        "**Disponibilidad del Sistema:** Garantizo la estabilidad y alta disponibilidad de aplicaciones web (fynq.site, qali-t.com).",
-        "**Gestión de Incidentes:** Identifico causas raíz e implemento correcciones de backend para resolver incidencias complejas.",
-        "**Integraciones Críticas:** Gestiono flujos de verificación de identidad (Didit) asegurando procesos seguros y confiables.",
-        "**Colaboración Estratégica:** Traduzco incidentes de producción en soluciones técnicas accionables junto a equipos técnicos.",
+        "**Apps en Producción:** Desarrollé aplicaciones web listas para producción (fynq.site, qali-t.com, olanchito.com, lz-englishacademy.com, vennq.com, pre-register.movelyq.com) con React.js, Next.js, TypeScript y Tailwind CSS.",
+        "**Arquitectura Front-end:** Diseñé estructuras frontend escalables e implementé lógica de backend con modelos de datos SQL.",
+        "**Integraciones:** Integré flujos de verificación de identidad (Didit) garantizando procesos de usuario seguros y confiables.",
+        "**Colaboración:** Traduje requerimientos de negocio en soluciones técnicas junto a stakeholders y equipos técnicos.",
       ],
     },
     socials: "https://qali-t.com",
@@ -42,16 +44,16 @@ const experiences = [
     skills: ["SQL", "PL/SQL", "Java", "SLA Management", "JIRA"],
     details: {
       en: [
-        "**Process Optimization:** Reduced international transfer processing time from 8 days to just 1 day.",
-        "**Core Banking Support:** Ensured 24/7 availability for critical financial systems in production environments.",
-        "**SLA Compliance:** Resolved complex incidents using SQL and PL/SQL while strictly meeting technical requirements.",
-        "**Regional Integration:** Led onboarding flows for partner banks to accelerate regional expansion.",
+        "**Process Optimization:** Reduced international transfer processing time from 8 days to just 1 day through SQL automation and system tuning.",
+        "**Core Banking Support:** Ensured 24/7 availability for critical financial systems in a high-stakes production environment.",
+        "**Incident Resolution:** Investigated and resolved high-priority incidents using SQL, PL/SQL, and Java, minimizing operational downtime.",
+        "**Agile Collaboration:** Managed change requests and incident tracking using JIRA and Confluence across distributed teams.",
       ],
       es: [
-        "**Optimización de Procesos:** Reduje el tiempo de procesamiento de transferencias internacionales de 8 días a solo 1 día.",
-        "**Soporte Core Bancario:** Garanticé disponibilidad 24/7 para sistemas financieros críticos en entornos de producción.",
-        "**Cumplimiento de SLA:** Resolví incidentes complejos usando SQL y PL/SQL bajo estrictos estándares de calidad.",
-        "**Integración Regional:** Lideré flujos de incorporación para bancos aliados acelerando la expansión regional.",
+        "**Optimización de Procesos:** Reduje el tiempo de procesamiento de transferencias internacionales de 8 días a solo 1 día mediante automatización SQL.",
+        "**Soporte Core Bancario:** Garanticé disponibilidad 24/7 para sistemas financieros críticos en entornos de producción de alto impacto.",
+        "**Resolución de Incidentes:** Investigué y resolví incidentes de alta prioridad usando SQL, PL/SQL y Java, minimizando tiempos de inactividad.",
+        "**Colaboración Ágil:** Gestioné solicitudes de cambio y seguimiento de incidentes con JIRA y Confluence en equipos distribuidos.",
       ],
     },
     socials: "https://ficohsa.com",
@@ -60,23 +62,23 @@ const experiences = [
   {
     company: "PIXDEA",
     role: {
-      en: "Technical Support Engineer",
-      es: "Ingeniero de Soporte Técnico",
+      en: "Jr. Software Developer & Technical Support",
+      es: "Desarrollador Jr. & Soporte Técnico",
     },
     period: { en: "Nov 2023 - March 2024", es: "Nov 2023 - Marzo 2024" },
-    skills: ["AWS Lambda", "RDS MySQL", "API Gateway", "Cloud Monitoring"],
+    skills: ["React.js", "AWS Lambda", "API Gateway", "MySQL", "Node.js"],
     details: {
       en: [
-        "**Cloud Operations:** Troubleshot backend inconsistencies in cloud-native applications using AWS services.",
-        "**Serverless Support:** Managed serverless APIs (Lambda, RDS, API Gateway) to ensure reliable data architecture.",
-        "**Data Monitoring:** Specialized in creating monitoring dashboards to track system performance and data accuracy.",
-        "**Agile Resolution:** Solved technical issues efficiently in agile environments for a seamless user experience.",
+        "**API Development:** Built REST APIs with AWS API Gateway and connected them to React front-end components for real-time data visualization.",
+        "**Serverless Backend:** Implemented data processing logic using AWS Lambda (Node.js, Python) and MySQL to power automated analytical dashboards.",
+        "**Technical Support:** Troubleshot backend and data-related issues, validating data accuracy across databases and resolving user-reported inconsistencies.",
+        "**Agile Team:** Managed tasks through Git and JIRA, contributing to both development and technical support workflows in a small agile team.",
       ],
       es: [
-        "**Operaciones Cloud:** Resolví inconsistencias de backend en aplicaciones nativas de la nube mediante servicios AWS.",
-        "**Soporte Serverless:** Gestioné APIs serverless (Lambda, RDS, API Gateway) asegurando la confiabilidad de los datos.",
-        "**Monitoreo de Datos:** Especializado en la creación de tableros de control para el rendimiento del sistema.",
-        "**Resolución Ágil:** Resolví problemas técnicos eficientemente en entornos ágiles para mejorar la experiencia de usuario.",
+        "**Desarrollo de APIs:** Construí REST APIs con AWS API Gateway conectadas a componentes React para visualización de datos en tiempo real.",
+        "**Backend Serverless:** Implementé lógica de procesamiento de datos con AWS Lambda (Node.js, Python) y MySQL para dashboards analíticos automatizados.",
+        "**Soporte Técnico:** Resolví problemas de backend e inconsistencias de datos, validando la precisión de información reportada por usuarios.",
+        "**Equipo Ágil:** Gestioné tareas con Git y JIRA, contribuyendo tanto al desarrollo como al soporte técnico en un equipo ágil pequeño.",
       ],
     },
     socials: "https://pixdea.com",
@@ -87,10 +89,7 @@ const renderDetail = (text) => {
   const parts = text.split(/(\*\*.*?\*\*)/g);
   return parts.map((part, i) =>
     part.startsWith("**") && part.endsWith("**") ? (
-      <strong
-        key={i}
-        className="text-dark-tertiary dark:text-white"
-      >
+      <strong key={i} className="text-dark-tertiary dark:text-white">
         {part.replace(/\*\*/g, "")}
       </strong>
     ) : (

@@ -4,18 +4,15 @@ function Home() {
   const { language } = useAppContext();
   const cvFile =
     language === "en"
-      ? "/Resume_FrankyInteriano_Support.pdf"
-      : "/Resume_FrankyInteriano_Support.pdf";
+      ? "/Resume_FrankyInteriano.pdf"
+      : "/Resume_FrankyInteriano.pdf";
 
-return (
+  return (
     <section className="min-h-screen flex items-center justify-center p-6 md:p-12 bg-light-background dark:bg-dark-primary transition-colors duration-500">
-      
       {/* CONTENEDOR PRINCIPAL: Ahora usa bg-white en light y dark-tertiary en dark */}
       <div className="mt-9 w-full max-w-7xl flex flex-col-reverse md:flex-row bg-white dark:bg-dark-tertiary rounded-[2.5rem] shadow-2xl overflow-hidden border border-light-tertiary dark:border-white/5">
-        
         {/* COLUMNA IZQUIERDA */}
         <div className="md:w-[65%] p-10 md:p-16 lg:p-20 flex flex-col justify-center">
-          
           {/* Status Badge */}
           <div className="flex items-center gap-3 mb-8">
             <span className="relative flex h-3 w-3">
@@ -23,7 +20,9 @@ return (
               <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
             </span>
             <span className="text-sm font-bold tracking-wider uppercase text-light-secondary dark:text-dark-secondary">
-              {language === "en" ? "Available for work" : "Disponible para trabajar"}
+              {language === "en"
+                ? "Available for work"
+                : "Disponible para trabajar"}
             </span>
           </div>
 
@@ -31,16 +30,17 @@ return (
           <h1 className="text-4xl md:text-6xl font-bold text-light-primary dark:text-dark-font_primary leading-[1.1] mb-6">
             {language === "en" ? (
               <>
-                Application Support <br />
+                Software <br />
                 <span className="text-light-secondary dark:text-dark-secondary">
                   Engineer.
                 </span>
               </>
             ) : (
               <>
-                Ingeniero de Soporte <br />
+                Ingeniero
+                <br />
                 <span className="text-light-secondary dark:text-dark-secondary">
-                  de Aplicaciones.
+                  de Software.
                 </span>
               </>
             )}
@@ -49,8 +49,8 @@ return (
           {/* Párrafo: Gris Slate balanceado para lectura */}
           <p className="text-lg md:text-xl text-slate-600 dark:text-dark-font leading-relaxed mb-10 max-w-2xl">
             {language === "en"
-              ? "Hi, I'm Franky Interiano. IT professional with proven experience supporting production systems in banking and web-based environments. I specialize in resolving critical incidents and optimizing SQL databases."
-              : "Hola, soy Franky Interiano. Profesional de TI con experiencia comprobada soportando sistemas de producción en entornos bancarios y web. Me especializo en resolver incidentes críticos y optimizar bases de datos SQL."}
+              ? "Hi, I'm Franky Interiano. Systems Engineer with 2+ years building and supporting production web applications in fintech and SaaS environments. I work across front-end and back-end, with a strong foundation in React, SQL Server, and cloud integrations."
+              : "Hola, soy Franky Interiano. Ingeniero de Sistemas con 2+ años desarrollando y soportando aplicaciones web en producción en entornos fintech y SaaS. Trabajo en front-end y back-end, con base sólida en React, SQL Server e integraciones cloud."}
           </p>
 
           {/* Botones */}
@@ -61,8 +61,18 @@ return (
               className="px-8 py-4 bg-light-secondary text-white dark:bg-dark-font_primary dark:text-dark-primary font-bold rounded-2xl hover:-translate-y-1 hover:shadow-lg transition-all text-center flex items-center justify-center gap-2"
             >
               {language === "en" ? "Download Resume" : "Descargar CV"}
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                />
               </svg>
             </a>
 
@@ -84,7 +94,7 @@ return (
               <span className="hidden sm:inline opacity-30">•</span>
               <span>SQL / PL-SQL</span>
               <span className="hidden sm:inline opacity-30">•</span>
-              <span>Incident Resolution</span>
+              <span>React</span>
             </div>
           </div>
         </div>
