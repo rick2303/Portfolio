@@ -104,7 +104,7 @@ function References() {
             >
               {/* Cuerpo del testimonio - flex-grow para empujar el footer abajo y que midan lo mismo */}
               <div className="flex-grow">
-                <div className="text-light-tertiary dark:text-dark-secondary text-4xl font-serif mb-4">
+                <div className="text-light-secondary dark:text-dark-secondary text-4xl font-serif mb-4">
                   “
                 </div>
                 <blockquote className="text-[16px] leading-relaxed text-dark-secondary/80 dark:text-dark-font/80 italic mb-8">
@@ -134,7 +134,7 @@ function References() {
                   <h4 className="font-bold text-dark-tertiary dark:text-dark-font_primary truncate text-base">
                     {ref.name}
                   </h4>
-                  <p className="text-[10px] uppercase tracking-wider font-bold text-light-tertiary dark:text-dark-secondary leading-tight mt-1 line-clamp-2">
+                  <p className="text-[10px] uppercase tracking-wider font-bold text-light-secondary dark:text-dark-secondary leading-tight mt-1 line-clamp-2">
                     {ref.position}
                   </p>
                 </div>

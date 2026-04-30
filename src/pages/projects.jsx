@@ -3,43 +3,31 @@ import { useAppContext } from "../context/AppContext";
 const projects = [
   {
     title: {
-      en: "MovelyQ: Logistics & Asset Rental Ecosystem",
-      es: "MovelyQ: Ecosistema de Logística y Alquiler de Activos",
+      en: "Splitwo: Expense Splitting Web App",
+      es: "Splitwo: Aplicación Web para Dividir Gastos",
     },
     description: {
-      en: "Developed a specialized rental platform focusing on SEO optimization and landing page lead generation. Engineered a high-performance architecture for pre-launch registration, ensuring scalable data handling for future market entry.",
-      es: "Desarrollé una plataforma de alquiler especializada enfocada en la optimización SEO y generación de leads. Diseñé una arquitectura de alto rendimiento para el registro de pre-lanzamiento, asegurando un manejo de datos escalable.",
+      en: "Built the full-stack web application for Splitwo, a platform that simplifies shared expense management between groups. Focused on real-time balance tracking, intuitive UX flows, and secure transaction handling to streamline how people split bills and settle debts.",
+      es: "Desarrollé la aplicación web full-stack de Splitwo, una plataforma que simplifica la gestión de gastos compartidos entre grupos. Me enfoqué en el seguimiento de balances en tiempo real, flujos de UX intuitivos y manejo seguro de transacciones para facilitar cómo las personas dividen cuentas y saldan deudas.",
     },
     year: "2026",
-    image: "/projects/movelyq.png",
-    link: "https://pre-register.movelyq.com",
+    image: "/projects/splitwo_app.png",
+    link: "https://app.splitwo.com",
+    tech: ["React", "Node.js", "PostgreSQL", "Tailwind CSS", "Stripe"],
   },
   {
     title: {
-      en: "FynQ: FinTech Asset & Investment Management",
-      es: "FynQ: Gestión de Activos Financieros e Inversiones",
+      en: "Splitwo: Landing Page & Marketing Website",
+      es: "Splitwo: Landing Page y Sitio Web de Marketing",
     },
     description: {
-      en: "Architected a digital finance ecosystem focused on secure asset tracking and real-time data visualization. Implemented a mobile-first approach with optimized API communication to ensure financial data integrity and backend stability.",
-      es: "Arquitecté un ecosistema financiero digital enfocado en el seguimiento seguro de activos y visualización de datos en tiempo real. Implementé un enfoque mobile-first con comunicación API optimizada para asegurar la integridad de los datos.",
+      en: "Designed and developed the marketing website for Splitwo, focused on conversion optimization and clear product communication. Built with performance and SEO best practices to drive user acquisition and effectively present the app's value proposition.",
+      es: "Diseñé y desarrollé el sitio web de marketing de Splitwo, enfocado en la optimización de conversiones y comunicación clara del producto. Construido con mejores prácticas de rendimiento y SEO para impulsar la adquisición de usuarios y presentar efectivamente la propuesta de valor.",
     },
     year: "2026",
-    image: "/projects/fynq_app.png",
-    link: "https://fynq.site",
-  },
-
-  {
-    title: {
-      en: "Bytam Design: Custom Embroidery E-commerce & Catalog",
-      es: "Bytam Design: E-commerce de Bordados Personalizados",
-    },
-    description: {
-      en: "Engineered a digital storefront for specialized embroidery services. Focused on high-fidelity image rendering via Cloudinary and a seamless user interface for garment personalization, integrating efficient file management for custom design orders.",
-      es: "Desarrollé una tienda digital para servicios de bordado especializados. Me enfoqué en el renderizado de imágenes de alta fidelidad vía Cloudinary y una interfaz fluida para la personalización de prendas y gestión de archivos de diseño.",
-    },
-    year: "2026",
-    image: "/projects/bytam.png",
-    link: "https://bytam-design.netlify.app",
+    image: "/projects/splitwo_web.png",
+    link: "https://splitwo.com",
+    tech: ["Next.js", "Tailwind CSS", "SEO"],
   },
   {
     title: {
@@ -53,6 +41,7 @@ const projects = [
     year: "2026",
     image: "/projects/lzacademy.png",
     link: "https://lz-englishacademy.com",
+    tech: ["React", "Node.js", "Stripe", "REST API"],
   },
   {
     title: {
@@ -66,6 +55,49 @@ const projects = [
     year: "2026",
     image: "/projects/olanchito.png",
     link: "https://olanchito.com",
+    tech: ["React", "Node.js", "SQL", "Stripe", "SEO"],
+  },
+  {
+    title: {
+      en: "MovelyQ: Logistics & Asset Rental Ecosystem",
+      es: "MovelyQ: Ecosistema de Logística y Alquiler de Activos",
+    },
+    description: {
+      en: "Developed a specialized rental platform focusing on SEO optimization and landing page lead generation. Engineered a high-performance architecture for pre-launch registration, ensuring scalable data handling for future market entry.",
+      es: "Desarrollé una plataforma de alquiler especializada enfocada en la optimización SEO y generación de leads. Diseñé una arquitectura de alto rendimiento para el registro de pre-lanzamiento, asegurando un manejo de datos escalable.",
+    },
+    year: "2026",
+    image: "/projects/movelyq.png",
+    link: "https://pre-register.movelyq.com",
+    tech: ["Next.js", "Tailwind CSS", "SEO", "Node.js"],
+  },
+  {
+    title: {
+      en: "FynQ: FinTech Asset & Investment Management",
+      es: "FynQ: Gestión de Activos Financieros e Inversiones",
+    },
+    description: {
+      en: "Architected a digital finance ecosystem focused on secure asset tracking and real-time data visualization. Implemented a mobile-first approach with optimized API communication to ensure financial data integrity and backend stability.",
+      es: "Arquitecté un ecosistema financiero digital enfocado en el seguimiento seguro de activos y visualización de datos en tiempo real. Implementé un enfoque mobile-first con comunicación API optimizada para asegurar la integridad de los datos.",
+    },
+    year: "2026",
+    image: "/projects/fynq_app.png",
+    link: "https://fynq.site",
+    tech: ["React Native", "Node.js", "REST API", "PostgreSQL", "Stripe"],
+  },
+  {
+    title: {
+      en: "Bytam Design: Custom Embroidery E-commerce & Catalog",
+      es: "Bytam Design: E-commerce de Bordados Personalizados",
+    },
+    description: {
+      en: "Engineered a digital storefront for specialized embroidery services. Focused on high-fidelity image rendering via Cloudinary and a seamless user interface for garment personalization, integrating efficient file management for custom design orders.",
+      es: "Desarrollé una tienda digital para servicios de bordado especializados. Me enfoqué en el renderizado de imágenes de alta fidelidad vía Cloudinary y una interfaz fluida para la personalización de prendas y gestión de archivos de diseño.",
+    },
+    year: "2026",
+    image: "/projects/bytam.png",
+    link: "https://bytam-design.netlify.app",
+    tech: ["React", "Node.js", "Cloudinary"],
   },
   {
     title: {
@@ -79,6 +111,7 @@ const projects = [
     year: "2025",
     image: "/projects/vennq_platform.png",
     link: "https://vennq.com",
+    tech: ["React", "Node.js", "SQL", "AWS"],
   },
   {
     title: {
@@ -92,6 +125,7 @@ const projects = [
     year: "2025",
     image: "/projects/photography_portfolio.png",
     link: "https://photography.frankyinteriano.com",
+    tech: ["Next.js", "Tailwind CSS", "Cloudinary"],
   },
   {
     title: {
@@ -105,6 +139,7 @@ const projects = [
     year: "2025",
     image: "/projects/fynq_web.png",
     link: "https://fynq.site",
+    tech: ["Next.js", "Tailwind CSS", "SEO"],
   },
   {
     title: {
@@ -118,6 +153,7 @@ const projects = [
     year: "2025",
     image: "/projects/SendInvitation.png",
     link: "https://github.com/rick2303/WeddingRM",
+    tech: ["Python", "Selenium", "Web Scraping", "Automation"],
   },
   {
     title: {
@@ -131,6 +167,7 @@ const projects = [
     year: "2025",
     image: "/projects/automation.png",
     link: "https://github.com/rick2303/InstagramUnfollowAutomation",
+    tech: ["JavaScript", "DOM API", "Web Automation", "Data Extraction"],
   },
   {
     title: {
@@ -144,6 +181,7 @@ const projects = [
     year: "2025",
     image: "/projects/weddingInvitation.png",
     link: "https://github.com/rick2303/WeddingRM",
+    tech: ["React", "Node.js", "SQL"],
   },
   {
     title: {
@@ -157,6 +195,7 @@ const projects = [
     year: "2023",
     image: "/projects/unah.jpeg",
     link: "https://github.com/rick2303/RegistroUNAH",
+    tech: ["Java", "SQL", "MySQL"],
   },
   {
     title: {
@@ -170,6 +209,7 @@ const projects = [
     year: "2023",
     image: "/projects/cpm.png",
     link: "https://github.com/rick2303/CPM_LATAM",
+    tech: ["JavaScript", "React"],
   },
 ];
 

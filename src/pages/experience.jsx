@@ -18,13 +18,13 @@ const experiences = [
     ],
     details: {
       en: [
-        "**Production Apps:** Built production-ready web applications (fynq.site, qali-t.com, olanchito.com, lz-englishacademy.com, vennq.com, pre-register.movelyq.com) using React.js, Next.js, TypeScript, and Tailwind CSS.",
+        "**Production Apps:** Built production-ready web applications (splitwo.com, app.splitwo.com, fynq.site, qali-t.com, olanchito.com, lz-englishacademy.com, vennq.com, pre-register.movelyq.com) using React.js, Next.js, TypeScript, and Tailwind CSS.",
         "**Front-end Architecture:** Designed scalable front-end structures and implemented backend logic with SQL-based data models.",
         "**Third-party Integrations:** Integrated identity verification workflows (Didit) ensuring secure and reliable user flows.",
         "**Cross-functional Collaboration:** Translated business requirements into technical solutions working closely with stakeholders.",
       ],
       es: [
-        "**Apps en Producción:** Desarrollé aplicaciones web listas para producción (fynq.site, qali-t.com, olanchito.com, lz-englishacademy.com, vennq.com, pre-register.movelyq.com) con React.js, Next.js, TypeScript y Tailwind CSS.",
+        "**Apps en Producción:** Desarrollé aplicaciones web listas para producción (splitwo.com, app.splitwo.com, fynq.site, qali-t.com, olanchito.com, lz-englishacademy.com, vennq.com, pre-register.movelyq.com) con React.js, Next.js, TypeScript y Tailwind CSS.",
         "**Arquitectura Front-end:** Diseñé estructuras frontend escalables e implementé lógica de backend con modelos de datos SQL.",
         "**Integraciones:** Integré flujos de verificación de identidad (Didit) garantizando procesos de usuario seguros y confiables.",
         "**Colaboración:** Traduje requerimientos de negocio en soluciones técnicas junto a stakeholders y equipos técnicos.",
@@ -144,7 +144,7 @@ function Experience() {
                   {/* Contenido */}
                   <div className="flex-grow pt-2 pl-12 md:pl-0">
                     <div className="flex flex-col gap-1 mb-4">
-                      <span className="text-xs font-mono font-bold text-light-tertiary dark:text-dark-secondary tracking-widest uppercase mb-1">
+                      <span className="text-xs font-mono font-bold text-light-secondary dark:text-dark-secondary tracking-widest uppercase mb-1">
                         {exp.period[language]}
                       </span>
                       <h3 className="text-2xl md:text-3xl font-bold text-dark-tertiary dark:text-white leading-tight">
@@ -154,7 +154,7 @@ function Experience() {
                         href={exp.socials}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-lg font-medium text-dark-secondary/70 dark:text-gray-400 hover:text-light-tertiary dark:hover:text-dark-secondary transition-colors w-fit italic"
+                        className="text-lg font-medium text-dark-secondary/70 dark:text-gray-400 hover:text-light-secondary dark:hover:text-dark-secondary transition-colors w-fit italic"
                       >
                         {exp.company}
                       </a>
@@ -179,7 +179,7 @@ function Experience() {
                           key={index}
                           className="flex gap-3 text-dark-secondary dark:text-gray-200 leading-relaxed text-[15px] md:text-[16px]"
                         >
-                          <span className="text-light-tertiary dark:text-dark-secondary font-bold mt-1">
+                          <span className="text-light-secondary dark:text-dark-secondary font-bold mt-1">
                             •
                           </span>
                           <div className="flex-grow">{renderDetail(item)}</div>

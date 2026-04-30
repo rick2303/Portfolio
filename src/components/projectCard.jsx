@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectCard = ({ title, description, year, image, link, language }) => {
+const ProjectCard = ({ title, description, year, image, link, language, tech }) => {
   return (
     <a
       href={link}
@@ -41,10 +41,22 @@ const ProjectCard = ({ title, description, year, image, link, language }) => {
             <p className="text-dark-secondary/80 dark:text-dark-font/70 text-[15px] leading-relaxed line-clamp-4">
               {description[language]}
             </p>
+            {tech && tech.length > 0 && (
+              <div className="flex flex-wrap gap-2 mt-4">
+                {tech.map((t, i) => (
+                  <span
+                    key={i}
+                    className="px-2 py-1 text-xs font-semibold rounded-md bg-light-secondary/10 dark:bg-dark-secondary/10 text-light-secondary dark:text-dark-secondary border border-light-secondary/20 dark:border-dark-secondary/20"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Footer: Más simple y funcional */}
-          <div className="mt-6 pt-4 border-t border-gray-50 dark:border-dark-tertiary/30 flex items-center text-light-tertiary dark:text-dark-secondary font-bold text-sm">
+          <div className="mt-6 pt-4 border-t border-gray-50 dark:border-dark-tertiary/30 flex items-center text-light-secondary dark:text-dark-secondary font-bold text-sm">
             <span className="group-hover:mr-2 transition-all duration-300">
               {link.includes("github") ? "GitHub Repository" : "Live Demo"}
             </span>

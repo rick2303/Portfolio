@@ -7,12 +7,14 @@ const skills = [
     img: "/logos/sql.png",
     category: "support",
   },
+  { name: "PL/SQL", img: "/logos/plsql.png", category: "support" },
   { name: "AWS (Cloud Support)", img: "/logos/aws.png", category: "support" },
   { name: "Jira / Trello", img: "/logos/jira.png", category: "support" },
   { name: "Postman", img: "/logos/postman.png", category: "support" },
   { name: "Power BI", img: "/logos/powerbi.png", category: "support" },
 
   // --- BACKEND & LOGIC ---
+  { name: "Python", img: "/logos/python.png", category: "backend" },
   { name: "Java", img: "/logos/java.png", category: "backend" },
   { name: "Node.js / NestJS", img: "/logos/nodeJS.png", category: "backend" },
   { name: "TypeScript", img: "/logos/typescript.png", category: "backend" },
@@ -23,7 +25,8 @@ const skills = [
   { name: "Agile", img: "/logos/agile.png", category: "infra" },
 
   // --- FRONTEND ---
-  { name: "React / Tailwind", img: "/logos/react.png", category: "frontend" },
+  { name: "React / Next.js", img: "/logos/react.png", category: "frontend" },
+  { name: "Tailwind CSS", img: "/logos/tailwind.png", category: "frontend" },
 ];
 
 const categories = [
