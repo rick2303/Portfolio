@@ -1,30 +1,31 @@
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import ScrollProgress from "./components/ScrollProgress";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/home";
+import ProjectsPage from "./pages/projects";
 import Experience from "./pages/experience";
-import References from "./pages/references";
 import Contact from "./pages/contact";
-import Skill from "./pages/skills";
-import ProjectsSection from "./pages/projects";
-import Languages from "./pages/languages";
 
 function App() {
   return (
-    <div className="bg-light-background text-slate-900 dark:bg-dark-primary dark:text-white min-h-screen transition-colors duration-500">
-      <header className="fixed top-0 w-full z-50">
-        <Navbar />
-      </header>
+    <div className="bg-light-background text-zinc-900 dark:bg-dark-primary dark:text-white min-h-screen font-sans antialiased transition-colors duration-500">
+      <ScrollProgress />
+      <ScrollToTop />
+      <Navbar />
 
-      <main id="home">
-        <Home />
-        <Experience />
-        <Skill />
-        <Languages />
-        <ProjectsSection />
-        <References />
-        <Contact />
-        <Footer />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
       </main>
+
+      <Footer />
     </div>
   );
 }

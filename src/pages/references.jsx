@@ -1,5 +1,7 @@
 import { useAppContext } from "../context/AppContext";
 import { FaLinkedinIn } from "react-icons/fa";
+import SectionHeader from "../components/SectionHeader";
+import { RevealGroup, RevealItem } from "../components/Reveal";
 
 const references = [
   {
@@ -64,74 +66,73 @@ const references = [
     name: "Josué Barahona",
     position: "Scrum Master at Bank Ficohsa",
     quote: {
-      en: "Franky is an exceptional person—diligent and committed. His sense of responsibility and transparency make him stand out in everything he does. It’s an honor to know and work with someone like him, and without a doubt, I would highly recommend him to anyone seeking a capable professional in his field.",
+      en: "Franky is an exceptional person—diligent and committed. His sense of responsibility and transparency make him stand out in everything he does. It's an honor to know and work with someone like him, and without a doubt, I would highly recommend him to anyone seeking a capable professional in his field.",
       es: "Franky es una persona excepcional, alguien diligente y comprometido, su responsabilidad y transparencia lo hacen único en todo lo que hace. Es un honor conocer y trabajar con alguien como él, sin duda alguna recomendaría a quien fuese necesario este profesional capaz en toda su área.",
     },
     image: "/people/josue.jpg",
     social: "https://www.linkedin.com/in/josué-barahona-68b04472/",
   },
 ];
+
 function References() {
   const { language } = useAppContext();
 
   return (
     <section
       id="references"
-      className="py-24 px-6 md:px-20 bg-light-background dark:bg-dark-primary transition-colors duration-500"
+      className="py-24 px-6 md:px-12 bg-light-background dark:bg-dark-primary transition-colors duration-500"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Título y Subtítulo */}
-        <div className="mb-16 flex flex-col items-center text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-dark-tertiary dark:text-dark-font_primary">
-            {language === "en"
-              ? "Professional Endorsements"
-              : "Referencias Profesionales"}
-          </h2>
-          <div className="w-20 h-1.5 bg-light-tertiary dark:bg-dark-secondary mt-4"></div>
-          <p className="mt-6 text-dark-secondary/70 dark:text-dark-font/60 max-w-2xl">
-            {language === "en"
+        <SectionHeader
+          kicker={language === "en" ? "04 — Endorsements" : "04 — Referencias"}
+          title={
+            language === "en"
+              ? "What colleagues say"
+              : "Lo que dicen mis colegas"
+          }
+          subtitle={
+            language === "en"
               ? "Validating my technical expertise through past collaborations."
-              : "Validando mi experiencia técnica a través de colaboraciones previas."}
-          </p>
-        </div>
+              : "Validando mi experiencia técnica a través de colaboraciones previas."
+          }
+        />
 
-        {/* Grid Uniforme (Mismo tamaño de cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {references.map((ref, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col bg-white dark:bg-dark-tertiary/10 border border-gray-100 dark:border-dark-secondary/20 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        <RevealGroup className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {references.map((ref) => (
+            <RevealItem
+              key={ref.name}
+              className="flex flex-col bg-white dark:bg-dark-tertiary/60 border border-light-tertiary dark:border-white/5 p-8 rounded-3xl hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:shadow-black/30 hover:-translate-y-1 hover:border-light-secondary/30 dark:hover:border-dark-secondary/30 transition-all duration-300"
             >
-              {/* Cuerpo del testimonio - flex-grow para empujar el footer abajo y que midan lo mismo */}
               <div className="flex-grow">
-                <div className="text-light-secondary dark:text-dark-secondary text-4xl font-serif mb-4">
+                <div className="font-display text-light-secondary dark:text-dark-secondary text-5xl leading-none mb-4">
                   “
                 </div>
-                <blockquote className="text-[16px] leading-relaxed text-dark-secondary/80 dark:text-dark-font/80 italic mb-8">
+                <blockquote className="text-[15px] leading-relaxed text-zinc-600 dark:text-dark-font italic mb-8">
                   {ref.quote[language]}
                 </blockquote>
               </div>
 
-              {/* Footer de la Card - Siempre alineado abajo */}
-              <div className="flex items-center gap-4 border-t border-gray-50 dark:border-dark-tertiary/30 pt-6 mt-auto">
+              <div className="flex items-center gap-4 border-t border-light-tertiary/70 dark:border-white/5 pt-6 mt-auto">
                 <div className="relative shrink-0">
                   <img
                     src={ref.image}
                     alt={ref.name}
-                    className="w-14 h-14 rounded-full object-cover border-2 border-light-tertiary/20 dark:border-dark-secondary/20"
+                    loading="lazy"
+                    className="w-14 h-14 rounded-full object-cover border-2 border-light-secondary/20 dark:border-dark-secondary/20"
                   />
                   <a
                     href={ref.social}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute -bottom-1 -right-1 bg-light-tertiary dark:bg-dark-secondary text-white p-1.5 rounded-full shadow-lg hover:scale-110 transition-transform"
+                    aria-label={`LinkedIn de ${ref.name}`}
+                    className="absolute -bottom-1 -right-1 bg-light-secondary dark:bg-dark-secondary text-white dark:text-dark-primary p-1.5 rounded-full shadow-lg hover:scale-110 transition-transform"
                   >
                     <FaLinkedinIn size={10} />
                   </a>
                 </div>
 
                 <div className="overflow-hidden">
-                  <h4 className="font-bold text-dark-tertiary dark:text-dark-font_primary truncate text-base">
+                  <h4 className="font-semibold text-light-primary dark:text-dark-font_primary truncate text-base">
                     {ref.name}
                   </h4>
                   <p className="text-[10px] uppercase tracking-wider font-bold text-light-secondary dark:text-dark-secondary leading-tight mt-1 line-clamp-2">
@@ -139,9 +140,9 @@ function References() {
                   </p>
                 </div>
               </div>
-            </div>
+            </RevealItem>
           ))}
-        </div>
+        </RevealGroup>
       </div>
     </section>
   );

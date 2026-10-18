@@ -4,30 +4,62 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
+        display: ["Fraunces", "Georgia", "Cambria", "Times New Roman", "serif"],
+        mono: [
+          "JetBrains Mono",
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "Consolas",
+          "monospace",
+        ],
+      },
+      keyframes: {
+        "fade-in-up": {
+          "0%": { opacity: "0", transform: "translateY(1rem)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "fade-in-up": "fade-in-up 500ms ease-out both",
+      },
       colors: {
         dark: {
-          // Un azul noche mucho más profundo y profesional
-          primary: "#0B121A",
-          // El color de acento (para iconos, puntos, bordes destacados)
-          secondary: "#3B82F6",
-          // Un azul grisáceo para tarjetas o elementos secundarios
-          tertiary: "#16222E",
-          // Texto principal (casi blanco)
-          font_primary: "#F1F5F9",
-          // Texto secundario (más suave)
-          font: "#94A3B8",
+          // Negro puro (zinc-950)
+          primary: "#09090B",
+          // Accent monocromo: blanco
+          secondary: "#FAFAFA",
+          // Surface de tarjeta (zinc-900)
+          tertiary: "#18181B",
+          // Texto principal (zinc-50)
+          font_primary: "#FAFAFA",
+          // Texto secundario (zinc-400)
+          font: "#A1A1AA",
         },
         light: {
-          // Un crema/grisáceo muy limpio (warm white)
-          background: "#FDFCFB",
-          // Color de texto principal
-          primary: "#1E293B",
-          // Color de acento en modo claro
-          secondary: "#2563EB",
-          // Gris cálido para bordes y detalles
-          tertiary: "#E2E8F0",
-          // Un tono sutil para fondos de secciones
-          section: "#F8FAFC",
+          // Blanco puro
+          background: "#FFFFFF",
+          // Texto principal casi negro (zinc-950)
+          primary: "#09090B",
+          // Accent monocromo: negro (zinc-900)
+          secondary: "#18181B",
+          // Bordes neutros (zinc-200) — NUNCA usar como color de texto
+          tertiary: "#E4E4E7",
+          // Surface secundaria (zinc-50)
+          section: "#FAFAFA",
         },
       },
     },

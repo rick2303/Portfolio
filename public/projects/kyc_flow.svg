@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#111B2E"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#18243B"/>
+      <stop offset="1" stop-color="#131D30"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#5EEAD4"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+
+  <!-- Título -->
+  <text x="800" y="215" text-anchor="middle" fill="#5EEAD4" font-size="22" font-weight="700" letter-spacing="6">REGULATED ONBOARDING · KYC / AML</text>
+  <text x="800" y="275" text-anchor="middle" fill="#F1F5F9" font-size="46" font-weight="700">Open an account from the phone, no branch visit</text>
+
+  <!-- Conectores -->
+  <g stroke="#5EEAD4" stroke-width="3" stroke-dasharray="8 8" marker-end="url(#arrow)">
+    <line x1="330" y1="500" x2="368" y2="500"/>
+    <line x1="630" y1="500" x2="668" y2="500"/>
+    <line x1="930" y1="500" x2="968" y2="500"/>
+    <line x1="1230" y1="500" x2="1268" y2="500"/>
+  </g>
+
+  <!-- Tarjetas -->
+  <g>
+    <rect x="75" y="350" width="250" height="300" rx="24" fill="url(#card)" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <rect x="375" y="350" width="250" height="300" rx="24" fill="url(#card)" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <rect x="675" y="350" width="250" height="300" rx="24" fill="url(#card)" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <rect x="975" y="350" width="250" height="300" rx="24" fill="url(#card)" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <rect x="1275" y="350" width="250" height="300" rx="24" fill="#0F2A2A" stroke="#5EEAD4" stroke-opacity="0.6" stroke-width="2"/>
+  </g>
+
+  <!-- Números -->
+  <g font-size="16" font-weight="700" fill="#64748B" letter-spacing="3">
+    <text x="105" y="392">STEP 01</text>
+    <text x="405" y="392">STEP 02</text>
+    <text x="705" y="392">STEP 03</text>
+    <text x="1005" y="392">STEP 04</text>
+    <text x="1305" y="392" fill="#5EEAD4">STEP 05</text>
+  </g>
+
+  <!-- Ícono 1: documento de identidad -->
+  <g transform="translate(160 425)" fill="none" stroke="#93C5FD" stroke-width="4" stroke-linecap="round">
+    <rect x="0" y="8" width="80" height="54" rx="8"/>
+    <circle cx="22" cy="31" r="9"/>
+    <line x1="42" y1="25" x2="68" y2="25"/>
+    <line x1="42" y1="38" x2="62" y2="38"/>
+  </g>
+  <!-- Ícono 2: rostro con marco de escaneo -->
+  <g transform="translate(460 420)" fill="none" stroke="#93C5FD" stroke-width="4" stroke-linecap="round">
+    <path d="M0 18V4h14M66 4h14v14M80 58v14H66M14 76H0V62"/>
+    <circle cx="40" cy="32" r="12"/>
+    <path d="M20 66c4-12 12-16 20-16s16 4 20 16"/>
+  </g>
+  <!-- Ícono 3: registro nacional (base de datos) -->
+  <g transform="translate(760 420)" fill="none" stroke="#93C5FD" stroke-width="4">
+    <ellipse cx="40" cy="12" rx="34" ry="10"/>
+    <path d="M6 12v52c0 6 15 10 34 10s34-4 34-10V12"/>
+    <path d="M6 38c0 6 15 10 34 10s34-4 34-10"/>
+  </g>
+  <!-- Ícono 4: escudo con check -->
+  <g transform="translate(1060 418)" fill="none" stroke="#93C5FD" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 2L74 14v24c0 20-14 34-34 40C20 72 6 58 6 38V14z"/>
+    <path d="M26 40l10 10 18-20"/>
+  </g>
+  <!-- Ícono 5: core bancario -->
+  <g transform="translate(1360 420)" fill="none" stroke="#5EEAD4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 26L40 4l36 22z"/>
+    <line x1="14" y1="34" x2="14" y2="62"/>
+    <line x1="31" y1="34" x2="31" y2="62"/>
+    <line x1="49" y1="34" x2="49" y2="62"/>
+    <line x1="66" y1="34" x2="66" y2="62"/>
+    <line x1="2" y1="72" x2="78" y2="72"/>
+  </g>
+
+  <!-- Textos de tarjeta -->
+  <g fill="#F1F5F9" font-size="26" font-weight="700" text-anchor="middle">
+    <text x="200" y="550">ID document</text>
+    <text x="500" y="550">Biometrics</text>
+    <text x="800" y="550">National registry</text>
+    <text x="1100" y="550">AML screening</text>
+    <text x="1400" y="550">Member created</text>
+  </g>
+  <g fill="#94A3B8" font-size="19" text-anchor="middle">
+    <text x="200" y="590">OCR + data capture</text>
+    <text x="200" y="616">from the phone</text>
+    <text x="500" y="590">Selfie, liveness and</text>
+    <text x="500" y="616">face match (Didit)</text>
+    <text x="800" y="590">Identity validated</text>
+    <text x="800" y="616">against RNP (SOAP)</text>
+    <text x="1100" y="590">Blacklists and PEP</text>
+    <text x="1100" y="616">lists before approval</text>
+    <text x="1400" y="590" fill="#99F6E4">Account opened in</text>
+    <text x="1400" y="616" fill="#99F6E4">the core system</text>
+  </g>
+
+  <!-- Chips de stack -->
+  <g font-size="18" font-weight="600" fill="#CBD5E1" text-anchor="middle">
+    <rect x="455" y="730" width="150" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="530" y="758">NestJS</text>
+    <rect x="625" y="730" width="150" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="700" y="758">Next.js</text>
+    <rect x="795" y="730" width="150" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="870" y="758">Redis</text>
+    <rect x="965" y="730" width="180" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="1055" y="758">SOAP / XML</text>
+  </g>
+  <g>
+    <circle cx="745" cy="830" r="6" fill="#34D399"/>
+    <text x="760" y="837" fill="#34D399" font-size="20" font-weight="700" letter-spacing="3">LIVE IN PRODUCTION</text>
+  </g>
+</svg>
