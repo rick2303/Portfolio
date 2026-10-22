@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
-import { AnimatePresence, motion as Motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, motion as Motion, useReducedMotion } from "motion/react";
 import ProjectPreview from "./ProjectPreview";
 import { StoreIcon } from "./StoreBadges";
 import { projectCategories } from "../data/projects";

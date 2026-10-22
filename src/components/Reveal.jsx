@@ -1,4 +1,4 @@
-import { motion as Motion, useReducedMotion } from "framer-motion";
+import { motion as Motion, useReducedMotion } from "motion/react";
 
 // Reveal basado en Framer Motion con soporte de stagger.
 // Uso: <Reveal>...</Reveal> o <Reveal delay={0.1}>...</Reveal>

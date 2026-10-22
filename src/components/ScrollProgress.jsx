@@ -1,4 +1,4 @@
-import { motion as Motion, useScroll, useSpring } from "framer-motion";
+import { motion as Motion, useScroll, useSpring } from "motion/react";
 
 // Barra de progreso de scroll fija bajo el navbar.
 function ScrollProgress() {

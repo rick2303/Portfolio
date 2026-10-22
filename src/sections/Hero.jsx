@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { motion as Motion, useReducedMotion } from "framer-motion";
+import { motion as Motion, useReducedMotion } from "motion/react";
 import { useAppContext } from "../context/AppContext";
 
 const ease = [0.21, 0.47, 0.32, 0.98];
@@ -35,7 +35,7 @@ function Hero() {
             className="md:hidden mb-6 w-28 h-28 rounded-2xl overflow-hidden border border-light-tertiary dark:border-white/10 shadow-lg shadow-zinc-900/10 dark:shadow-black/40"
           >
             <img
-              src="/headshot.jpg"
+              src="/headshot.webp"
               alt="Franky Interiano"
               className="w-full h-full object-cover object-[50%_30%] scale-[1.45] origin-[50%_42%]"
             />
@@ -187,7 +187,7 @@ function Hero() {
         >
           <div className="relative rounded-[2rem] overflow-hidden border border-light-tertiary dark:border-white/10 shadow-2xl shadow-zinc-900/10 dark:shadow-black/40 bg-light-section dark:bg-dark-tertiary">
             <img
-              src="/headshot.jpg"
+              src="/headshot.webp"
               alt="Franky Interiano"
               className="w-full aspect-[3/4] object-cover object-[50%_30%] scale-[1.12] origin-[50%_80%] transition-transform duration-700 hover:scale-[1.15]"
             />

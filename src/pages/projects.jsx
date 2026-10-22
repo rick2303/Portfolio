@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { AnimatePresence, motion as Motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, motion as Motion, useReducedMotion } from "motion/react";
 import ProjectCard from "../components/projectCard";
 import ProjectModal from "../components/ProjectModal";
 import SectionHeader from "../components/SectionHeader";

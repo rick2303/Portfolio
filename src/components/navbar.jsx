@@ -44,7 +44,7 @@ function Navbar() {
         <div className="flex items-center group z-50">
           <Link to="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
             <img
-              src="/icon.png"
+              src="/logo.png"
               alt="Logo"
               className="w-9 h-9 rounded-xl shadow-md transition-transform group-hover:rotate-12"
             />
